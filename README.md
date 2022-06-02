@@ -1,4 +1,5 @@
 # Robot Framework in Docker, with Firefox and Chrome
+[![Docker Build](https://github.com/yusufcanb/docker-robot-framework/actions/workflows/docker-build.yml/badge.svg?branch=master)](https://github.com/yusufcanb/docker-robot-framework/actions/workflows/docker-build.yml)
 
 ## What is it?
 
