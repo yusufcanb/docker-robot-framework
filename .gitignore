@@ -9,3 +9,5 @@ reports/
 # IntelliJ
 .idea/
 *.iml
+
+.vscode/

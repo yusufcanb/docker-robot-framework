@@ -1,7 +1,6 @@
 FROM fedora:36
 
-MAINTAINER Paul Podgorsek <ppodgorsek@users.noreply.github.com>
-LABEL description Robot Framework in Docker.
+LABEL Ready to use execution environment for robot scripts
 
 # Set the reports directory environment variable
 ENV ROBOT_REPORTS_DIR /opt/robotframework/reports
