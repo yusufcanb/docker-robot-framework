@@ -56,6 +56,9 @@ COPY bin/chromedriver.sh /opt/robotframework/bin/chromedriver
 COPY bin/chromium-browser.sh /opt/robotframework/bin/chromium-browser
 COPY bin/run-tests-in-virtual-screen.sh /opt/robotframework/bin/
 
+# Create empty variables file
+RUN touch /opt/robotframework/variables.yaml
+
 # Install system dependencies
 RUN dnf upgrade -y --refresh \
   && dnf install -y \
