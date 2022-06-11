@@ -25,7 +25,7 @@ then
     xvfb-run \
         --server-args="-screen 0 ${SCREEN_WIDTH}x${SCREEN_HEIGHT}x${SCREEN_COLOUR_DEPTH} -ac" \
         robot \
-        --variablesfile /opt/robotframework/variables.yaml
+        --variablesfile /opt/robotframework/variables.yaml \
         --outputDir $ROBOT_REPORTS_FINAL_DIR \
         ${ROBOT_OPTIONS} \
         $ROBOT_TESTS_DIR
@@ -36,7 +36,7 @@ else
         --verbose \
         --processes $ROBOT_THREADS \
         ${PABOT_OPTIONS} \
-        --variablesfile /opt/robotframework/variables.yaml
+        --variablesfile /opt/robotframework/variables.yaml \
         --outputDir $ROBOT_REPORTS_FINAL_DIR \
         ${ROBOT_OPTIONS} \
         $ROBOT_TESTS_DIR
