@@ -46,6 +46,7 @@ ENV REQUESTS_VERSION 0.9.2
 ENV ROBOT_FRAMEWORK_VERSION 5.0
 ENV SELENIUM_LIBRARY_VERSION 6.0.0
 ENV SSH_LIBRARY_VERSION 3.8.0
+ENV KUBE_LIBRARY_VERSION 0.8.3
 ENV XVFB_VERSION 1.20
 
 # By default, no reports are uploaded to AWS S3
@@ -68,6 +69,7 @@ RUN dnf upgrade -y --refresh \
     npm \
     nodejs \
     python3-pip \
+    git \
     tzdata \
     xorg-x11-server-Xvfb-${XVFB_VERSION}* \
   && dnf clean all
@@ -92,6 +94,7 @@ RUN pip3 install \
   robotframework-requests==$REQUESTS_VERSION \
   robotframework-seleniumlibrary==$SELENIUM_LIBRARY_VERSION \
   robotframework-sshlibrary==$SSH_LIBRARY_VERSION \
+  robotframework-kubelibrary==$KUBE_LIBRARY_VERSION \
   axe-selenium-python==$AXE_SELENIUM_LIBRARY_VERSION \
   PyYAML \
   # Install awscli to be able to upload test reports to AWS S3
