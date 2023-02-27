@@ -1,6 +1,6 @@
 *** Settings ***
 
-Library           KubeLibrary    api_url=${K8S_API_URL}  bearer_token=${K8S_TOKEN}  ca_cert=%{K8S_CA_CRT}
+Library           KubeLibrary    api_url=${K8S_API_URL}  bearer_token=${K8S_TOKEN}  ca_cert=${K8S_CA_CRT}
 
 *** Test Cases ***
 
